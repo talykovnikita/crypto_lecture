@@ -18,6 +18,7 @@ def main():
     message = "Всем привет! Я сегодня читаю лекцию про криптографию!!!"
 
     encrypted_text = crypt(encrypt_rules, message)
+    print(f"Исходное сообщение:       {message}")
     print(f"Зашифрованное сообщение:  {encrypted_text}")
 
     decrypted_text = crypt(decrypt_rules, encrypted_text)
